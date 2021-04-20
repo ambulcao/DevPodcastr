@@ -2,7 +2,7 @@ import { useEffect } from "react"
 
 export default function Home() {
   useEffect(() => {
-    fetch('http://localhost:3333/episodes')
+    fetch('https://localhost:3333/episodes')
       .then(response => response.json())
       .then(data => console.log(data))
   }, [])
